@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-weather">
+        <h1 id="location-header">Sydney</h1>
+      </div>
+      <div class="temperature-div">
+        <h2 id="date-display">Day Time</h2>
+        <span id="temperature-header">19</span>
+        <span class="temp-format"
+          ><a id="celsius" href="#">°C</a>
+        <p>
+          <span id="weather-conditions">Sunny</span> |
+          <span id="weather-humidity">Humidity 68%</span> |
+          <span id="weather-winds">Winds 2.5km/h</span>
+        </p>
+      </div>
+      <form id="search-form">
+        <div class="form-row">
+          <div class="col-sm">
+            <input
+              id="search-bar"
+              type="text"
+              class="form-control form-control-lg search-bar"
+              placeholder="Search locations ..."
+              autocomplete="off"
+              autofocus="on"
+            />
+            <button
+              id="search-button"
+              type="submit"
+              class="btn btn-primary btn-lg btn-block"
+            >
+              Search
+            </button>
+            <button
+              id="current-location-button"
+              type="submit"
+              class="btn btn-primary btn-lg btn-block"
+            >
+              Current Location
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="row weather-forecast">
+        <div class="col-sm">
+          <div class="card" style="min-width: 7rem">
+            <div class="card-body">
+              <p class="forecast-day">Sunday</p>
+              <p class="forecast-temp">
+                Min 11° <br />
+                Max 14°
+              </p>
+              <p class="forecast-icon">⛈</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="min-width: 7rem">
+            <div class="card-body">
+              <p class="forecast-day">Monday</p>
+              <p class="forecast-temp">
+                Min 11° <br />
+                Max 15°
+              </p>
+              <p class="forecast-icon">🌧</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="min-width: 7rem">
+            <div class="card-body">
+              <p class="forecast-day">Tuesday</p>
+              <p class="forecast-temp">
+                Min 11° <br />
+                Max 16°
+              </p>
+              <p class="forecast-icon">🌦</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="min-width: 7rem">
+            <div class="card-body">
+              <p class="forecast-day">Wednesday</p>
+              <p class="forecast-temp">
+                Min 11° <br />
+                Max 18°
+              </p>
+              <p class="forecast-icon">🌦</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="min-width: 7rem">
+            <div class="card-body">
+              <p class="forecast-day">Thursday</p>
+              <p class="forecast-temp">
+                Min 11° <br />
+                Max 16°
+              </p>
+              <p class="forecast-icon">🌦</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="min-width: 7rem">
+            <div class="card-body">
+              <p class="forecast-day">Friday</p>
+              <p class="forecast-temp">
+                Min 9° <br />
+                Max 15°
+              </p>
+              <p class="forecast-icon">🌥</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

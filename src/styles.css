@@ -1,0 +1,75 @@
+body {
+  font-family: "PT Mono", monospace;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 76px;
+  margin: 30px auto;
+  font-weight: 900;
+}
+
+#date-display {
+  font-size: 20px;
+}
+
+#temperature-header {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.temperature-div,
+.current-weather,
+.card {
+  text-align: center;
+}
+
+.container {
+  background: linear-gradient(45deg, #1da1f2, #a9e4f7, #47b5ff, #fee038);
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.weather-forecast {
+  padding: 30px;
+}
+
+.forecast-day {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-row {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 100%;
+}
+
+#search-button {
+  width: 50%;
+  border: 1px solid #fff;
+}
+
+#current-location-button {
+  float: right;
+  width: 50%;
+  background: #fff;
+  color: #0b5ed7;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#current-location-button:hover {
+  background: #a9e4f7;
+}
+
+#celsius,
+#fahrenheit {
+  color: #212529;
+  font-size: 18px;
+}
