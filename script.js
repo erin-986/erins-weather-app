@@ -103,5 +103,3 @@ changeToF.addEventListener("click", showFahrenheit);
 
 let changeToC = document.querySelector("#celsius");
 changeToC.addEventListener("click", showCelsius);
-
-search("London");
