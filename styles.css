@@ -9,6 +9,10 @@ h1 {
   font-weight: 900;
 }
 
+footer {
+  padding-left: 165px;
+}
+
 #date-display {
   font-size: 20px;
 }
