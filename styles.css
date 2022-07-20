@@ -84,4 +84,13 @@ footer {
 #fahrenheit {
   color: #212529;
   font-size: 18px;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.active:hover {
+  cursor: default;
 }
