@@ -13,6 +13,9 @@ let days = [
 let day = days[now.getDay()];
 let hours = now.getHours();
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let currentTime = document.querySelector("#date-display");
 currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 
@@ -21,9 +24,10 @@ currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 function showTemperature(response) {
   let location = response.data.name;
   let temperature = Math.round(response.data.main.temp);
-  let conditions = response.data.weather[0].main;
+  let conditions = response.data.weather[0].description;
   let humidity = response.data.main.humidity;
   let wind = Math.round(response.data.wind.speed);
+  let icon = response.data.weather[0].icon;
   let locationHeader = document.querySelector("#location-header");
   locationHeader.innerHTML = `${location}`;
   let temperatureHeader = document.querySelector("#temperature-header");
@@ -34,6 +38,11 @@ function showTemperature(response) {
   weatherHumidity.innerHTML = `Humidity ${humidity}%`;
   let weatherWindy = document.querySelector("#weather-winds");
   weatherWindy.innerHTML = `Winds ${wind}km/h`;
+  let weatherIcon = document.querySelector("#icon");
+  weatherIcon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${icon}@2x.png`
+  );
 }
 
 function search(event) {
