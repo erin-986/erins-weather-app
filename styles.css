@@ -41,10 +41,6 @@ footer {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-.weather-forecast {
-  padding: 30px;
-}
-
 .forecast-day,
 .forecast-temp {
   font-size: 18px;
