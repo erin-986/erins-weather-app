@@ -35,16 +35,14 @@ footer {
 .card {
   text-align: center;
 }
+.card {
+  margin: 30px 0 8px 0;
+}
 
 .temp-format {
   color: #212529;
   font-size: 18px;
   text-decoration: none;
-}
-
-.card {
-  padding: 10px;
-  margin: 16px 0;
 }
 
 .card-body img {

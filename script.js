@@ -40,7 +40,7 @@ function displayForecast(response) {
         forecastHTML +
         `
     <div class="col-2">
-      <div class="card" style="min-width: 7rem">
+      <div class="card">
         <div class="card-body">
           <div class="forecast-day">
           ${formatForecastDay(forecastDay.dt)}
@@ -130,3 +130,11 @@ function currentLocationTemp(event) {
 
 let currentLoc = document.querySelector("#current-location-button");
 currentLoc.addEventListener("click", currentLocationTemp);
+
+function defaultCity() {
+  let apiKey = "4cefc11f1f38ea5cac3c215cbf9217d2";
+  let apiUrlCity = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=metric`;
+  axios.get(apiUrlCity).then(showTemperature);
+}
+
+defaultCity("load");
