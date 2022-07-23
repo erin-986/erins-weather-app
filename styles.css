@@ -28,6 +28,12 @@ footer {
   text-align: center;
 }
 
+.temp-format {
+  color: #212529;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 .card-body img {
   width: 72px;
 }
@@ -83,19 +89,4 @@ footer {
 
 #current-location-button:hover {
   background: #a9e4f7;
-}
-
-#celsius,
-#fahrenheit {
-  color: #212529;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.active {
-  font-weight: 600;
-}
-
-.active:hover {
-  cursor: default;
 }
