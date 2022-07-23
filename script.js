@@ -130,30 +130,3 @@ function currentLocationTemp(event) {
 
 let currentLoc = document.querySelector("#current-location-button");
 currentLoc.addEventListener("click", currentLocationTemp);
-
-// Unit Conversion
-
-// function showFahrenheit(event) {
-//   event.preventDefault();
-//   let temperatureDisplay = document.querySelector("#temperature-header");
-//   changeToC.classList.remove("active");
-//   changeToF.classList.add("active");
-//   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
-//   temperatureDisplay.innerHTML = Math.round(fahrenheitTemp);
-// }
-
-// function showCelsius(event) {
-//   event.preventDefault();
-//   changeToC.classList.add("active");
-//   changeToF.classList.remove("active");
-//   let temperatureDisplay = document.querySelector("#temperature-header");
-//   temperatureDisplay.innerHTML = Math.round(celsiusTemperature);
-// }
-
-// let celsiusTemperature = null;
-
-// let changeToF = document.querySelector("#fahrenheit");
-// changeToF.addEventListener("click", showFahrenheit);
-
-// let changeToC = document.querySelector("#celsius");
-// changeToC.addEventListener("click", showCelsius);

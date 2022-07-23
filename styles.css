@@ -9,6 +9,14 @@ h1 {
   font-weight: 900;
 }
 
+ul {
+  list-style: none;
+}
+
+ul:first-letter {
+  text-transform: capitalize;
+}
+
 footer {
   padding-left: 165px;
 }
@@ -32,6 +40,11 @@ footer {
   color: #212529;
   font-size: 18px;
   text-decoration: none;
+}
+
+.card {
+  padding: 10px;
+  margin: 16px 0;
 }
 
 .card-body img {
@@ -81,10 +94,6 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-#weather-conditions {
-  text-transform: capitalize;
 }
 
 #current-location-button:hover {
