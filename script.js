@@ -39,7 +39,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-    <div class="col-2">
+    <div class="col-sm-2">
       <div class="card">
         <div class="card-body">
           <div class="forecast-day">
