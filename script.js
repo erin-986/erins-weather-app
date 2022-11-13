@@ -3,6 +3,8 @@ import { BrowserTracing } from "@sentry/tracing";
 
 Sentry.init({
   dsn: "https://fad11ea003d948829f3ca983e674bdd6@o4504149806481408.ingest.sentry.io/4504149846458368",
+  maxBreadcrumbs: 50,
+  debug: true,
 
   // Alternatively, use `process.env.npm_package_version` for a dynamic release version
   // if your build tool supports it.
