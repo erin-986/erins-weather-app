@@ -1,22 +1,3 @@
-import * as Sentry from "@sentry/browser";
-import { BrowserTracing } from "@sentry/tracing";
-
-Sentry.init({
-  dsn: "https://fad11ea003d948829f3ca983e674bdd6@o4504149806481408.ingest.sentry.io/4504149846458368",
-
-  // Alternatively, use `process.env.npm_package_version` for a dynamic release version
-  // if your build tool supports it.
-  release: "my-project-name@2.3.12",
-  integrations: [new BrowserTracing()],
-
-  // Set tracesSampleRate to 1.0 to capture 100%
-  // of transactions for performance monitoring.
-  // We recommend adjusting this value in production
-  tracesSampleRate: 1.0,
-});
-
-myUndefinedFunction();
-
 // Day and Time Display
 let now = new Date();
 let days = [
