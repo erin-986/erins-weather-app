@@ -121,12 +121,12 @@ function currentLocation(position) {
   let apiKey = "4cefc11f1f38ea5cac3c215cbf9217d2";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
+  console.log(apiUrl);
 }
 
 function currentLocationTemp(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(currentLocation);
-  console.log(getCurrentPosition);
 }
 
 let currentLoc = document.querySelector("#current-location-button");
