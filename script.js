@@ -126,6 +126,7 @@ function currentLocation(position) {
 function currentLocationTemp(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(currentLocation);
+  console.log(getCurrentPosition);
 }
 
 let currentLoc = document.querySelector("#current-location-button");
